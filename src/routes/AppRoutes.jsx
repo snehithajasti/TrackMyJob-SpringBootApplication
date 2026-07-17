@@ -1,0 +1,34 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "../pages/Landing/Landing";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Applications from "../pages/Applications/Applications";
+import Companies from "../pages/Companies/Companies";
+import Interviews from "../pages/Interviews/Interviews";
+import Analytics from "../pages/Analytics/Analytics";
+import Profile from "../pages/Profile/Profile";
+import Settings from "../pages/Settings/Settings";
+import NotFound from "../pages/NotFound/NotFound";
+
+function AppRoutes(){
+    return(
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Landing/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/applications" element={<Applications/>} />
+            <Route path="/companies" element={<Companies/>} />
+            <Route path="/interviews" element={<Interviews/>} />
+            <Route path="/analytics" element={<Analytics/>} />
+            <Route path="/profile" element={<Profile/>} />
+            <Route path="/settings" element={<Settings/>} />
+            <Route path="*" element={<NotFound/>} />
+        </Routes>
+        </BrowserRouter>
+    )
+}
+
+export default AppRoutes;
