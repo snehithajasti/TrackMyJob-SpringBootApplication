@@ -1,6 +1,6 @@
-function Landing() {
-  return (
-    <h1>Landing Page</h1>
+function Landing(){
+  return(
+    <div></div>
   );
 }
 
